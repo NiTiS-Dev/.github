@@ -118,3 +118,26 @@ string name = "VILYAM";
 + Add at least one blank line between method definitions and property definitions
 + Use parentheses to make clauses in an expression apparent, as shown in the following code
 
+# Language guidelines
+
+The following sections describe practices that the C# team follows to prepare code examples and samples
+
+## Explicit typed local variables
+
+Avoid to use `var` keyword, define variable type to the left for faster code reading  
+Invalid use:
+```cs
+var size = elements.Length;
+
+var name = new string(pBuffer, 12);
+
+var vowels = new string[] { "a", "e", "i", "o", "u" };
+```
+Valid use:
+```cs
+int size = elements.Length;
+
+string name = new(pBuffer, 12);
+
+string[] vowels = { "a", "e", "i", "o", "u" };
+```
