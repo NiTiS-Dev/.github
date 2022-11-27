@@ -96,3 +96,25 @@ public class Group<ELEMENT> {}
 ```
 
 # Layout conventions
+Good layout uses formatting to emphasize the structure of your code and to make the code easier to read  
+There are several examples of good conventions:
++ Use tabs instead of 4 space
++ Write no more one statement per line
+```cs
+actor.Ask();
+actor.JumpToTheCosmos();
+```
++ Declare only same-type variables per line
+```cs
+int x, y, z;
+string name;
+```
+```cs
+int x = 1,
+    y = 2,
+    z = 4;
+string name = "VILYAM";
+```
++ Add at least one blank line between method definitions and property definitions
++ Use parentheses to make clauses in an expression apparent, as shown in the following code
+
