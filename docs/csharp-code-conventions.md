@@ -42,3 +42,45 @@ public interface ISelectableObject
 {
 }
 ```
+
+## Fields naming
+Use "PascalCase" when naming `public static`, `public readonly`, `public static readonly` fields and `const`
+```cs
+public class DontLookAtMe
+{
+  public readonly string Name;
+  public static string HoRedTeDais;
+  public static readonly string HoRedToRaze;
+  public const string Yera = "2022";
+}
+```
+
+Use "camelCase" when naming non-public fields and editable non-static `public` fields
+```cs
+public class DataManager
+{
+  public string serverUri;
+  private string password;
+  private readonly int port;
+}
+```
+
+## Parameter naming
+
+Use "camelCase" when naming parameters
+```cs
+public static class ABVGDEYOZJE
+{
+  public static void SomeMethod(int index, uint numero, Scene stage, ReplicaType replicaType);
+}
+```
+
+Use "PascalCase" with T at the begining or "SCREAMING_SNAKE_CASE" when naming generic parameters
+```cs
+// PascalCase
+public class Group<TElement> {}
+// SCREAMING_SHAKE_CASE
+public class Group<ELEMENT> {}
+```
+
+# Layout conventions
