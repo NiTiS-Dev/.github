@@ -8,7 +8,7 @@ In the following examples, any of the guidance pertaining to elements marked `pu
 is also applicable when working with `protected` and `protected internal` elements,
 all of which are intended to be visible to external callers
 
-## Type Naming
+## Type naming
 Use "PascalCase" when naming types (`class`, `struct`, `delegate`, `record`, `interface`)
 
 ```cs
@@ -64,7 +64,19 @@ public class DataManager
   private readonly int port;
 }
 ```
-
+## Local variable naming
+Use "camelCase"
+```cs
+public class A
+{
+  public static void B()
+  {
+    string camelCase;
+    int id;
+    uint UserId;
+  }
+}
+```
 ## Parameter naming
 
 Use "camelCase" when naming parameters
